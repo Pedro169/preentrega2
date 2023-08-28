@@ -27,7 +27,7 @@ nav {
 nav ul {
   display: flex;
   border: solid white 1px;
-  background-color: rgb(154, 91, 216);
+  background-color: rgb(60, 230, 207);
   border-radius: 1rem;
 }
 nav ul li {
@@ -37,16 +37,40 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 nav ul li a:hover {
-  background-color: rgb(71, 225, 81);
+  background-color: rgb(241, 152, 125);
   border-radius: 1rem;
-  padding: 1rem 1.5rem;
+  padding: 5px 10px;
   color: white;
 }
 .a {
   color: rgb(71, 225, 81);
   font-weight: bold;
+}
+.item1 {
+  color: black;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.item1:hover {
+  background-color: rgb(60, 230, 207);
+}
+.btn-nav {
+  border: solid rgb(60, 230, 207) 1px;
+  background-color: rgb(60, 230, 207);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+}
+.btn-nav:hover {
+  color: white;
+  background-color: rgb(241, 152, 125);
+  border: solid white 1px;
 }
 h1 {
   text-align: center;
@@ -54,7 +78,15 @@ h1 {
 }
 h2 {
   font-size: 2rem;
+  margin-top: 1rem;
   margin-bottom: 1rem;
+  text-align: center;
+}
+h3 {
+  font-size: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 h6 {
   font-size: 1rem;
@@ -75,6 +107,68 @@ h6 {
 .articulo1 {
   padding: 3rem;
 }
+.card-style {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.card-body {
+  padding: 1rem;
+}
+.card-title1 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.blog {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 3rem;
+}
+.container-display {
+  display: flex;
+  align-items: center;
+}
+.galeria {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.img-galeria {
+  width: 20rem;
+  height: auto;
+  padding: 0.5rem;
+}
+.p-galeria {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.btn-blog {
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  background-color: white;
+  color: rgb(60, 230, 207);
+  border: solid rgb(60, 230, 207);
+  font-size: 1rem;
+}
+.btn-blog:hover {
+  background-color: rgb(60, 230, 207);
+  color: white;
+  cursor: pointer;
+}
+.img-about{
+  width: 20rem;
+  height: auto;
+}
 footer {
   display: flex;
   justify-content: space-evenly;
@@ -82,4 +176,40 @@ footer {
   height: 20vh;
   background-color: black;
   color: white;
+}
+/* responsive */
+@media (max-width: 900px) {
+  .img-index{
+    display: flex;
+    justify-content: center;
+    width: 25rem;
+    height: auto;
+  }
+  .image1{
+    display: none;
+  }
+  .articulo1 {
+    padding: 0rem;
+  }
+  .interiorInicio {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+  }
+  .container-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .img-about{
+    width: 15rem;
+  }
+  .blog {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3rem;
+  }
+  
 }
