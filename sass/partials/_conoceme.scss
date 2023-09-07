@@ -1,0 +1,48 @@
+@import "./variables";
+@import "./inicio";
+
+body {
+  .imagenFondo-conoceme {
+    margin: 0;
+    padding: 0;
+    background-image: url("../../img/imagenFondo2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    color: #333;
+    width: auto;
+    height: 85vh;
+    display: flex;
+    justify-content: Center;
+    align-items: center;
+    .fuente2 {
+      color: black;
+      text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.925);
+    }
+  }
+  .conoceme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    .img-about {
+      width: 20rem;
+      border-radius: 50%;
+      margin-left: 3rem;
+    }
+  }
+  .p-conoceme {
+    width: 35rem;
+    margin-left: 3rem;
+    p {
+      text-align: justify;
+      font-family: $Playfair;
+    }
+    span {
+      font-weight: bold;
+      font-size: 2.5rem;
+      font-family: $Dancing;
+    }
+  }
+}

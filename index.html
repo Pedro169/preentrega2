@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Preentrega 1</title>
-    <!-- Estilos -->
+    <!-- Estilos Css -->
     <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Estilos con Sass -->
+    <link rel="stylesheet" href="css/estilos.css" />
     <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
@@ -14,95 +17,147 @@
       integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
     />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header>
-      <a href="index.html"
-        ><img class="logo" src="img/logo.png" alt="logo"
-      /></a>
       <!-- Barra de navegación -->
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">FotoBlog</a>
           <button
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
+            data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul
+              class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+              style="--bs-scroll-height: 100px"
+            >
               <li class="nav-item">
-                <a class="active" aria-current="page" href="./index.html"
+                <a class="nav-link active" aria-current="page" href="#"
                   >Inicio</a
                 >
               </li>
               <li class="nav-item">
-                <a class="" href="pages/conoceme.html">Conoceme</a>
+                <a class="nav-link" href="pages/conoceme.html">Conoceme</a>
               </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Revisar
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="item1" href="./pages/galeria.html">Galería</a></li>
-                  <li><a class="item1" href="./pages/blog.html">Blog</a></li>
-                </ul>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/galeria.html">Galería</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/contacto.html">Contacto</a>
               </li>
             </ul>
-            <form class="d-flex" role="buscar">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Introduce una palabra"
-                aria-label="Buscar"
-              />
-              <button class="btn-nav" type="submit">
-                Buscar
-              </button>
-            </form>
           </div>
+          <a class="navbar-brand" href="index.html">FoteaMiBoda</a>
         </div>
       </nav>
       <!-- Fin Barra de Navegación -->
     </header>
     <main>
-      <h1>Bienvenidos a mi Página</h1>
+      <!-- Portada -->
       <section class="carrusel">
-        <img class="img-index" src="img/Portada-Diseño-web.png" alt="carrusel" />
+        <img
+          class="img-index"
+          src="img/portada.jpg"
+          alt="imagen de dos novios posando para foto"
+        />
       </section>
+      <!-- Fin Portada -->
+      <!-- Link Acceso galeria y Conoceme -->
       <div class="interiorInicio">
         <section>
-          <article class="articulo1">
-            <h2>titulo de párrafo</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-              neque amet maxime aliquam ipsa, explicabo placeat facilis quaerat
-              eligendi atque omnis sed, dolor nihil, delectus harum labore illum
-              nostrum pariatur!
-            </p>
-          </article>
+          <a href="./pages/galeria.html">
+            <img
+              class="img-carrusel"
+              src="img/GALERIA.jpg"
+              alt="fotografia dos novios caminando por arboleda"
+            />
+          </a>
+          <h3>Galería</h3>
         </section>
         <section>
-          <img class="image1" src="img/principio.jpeg" alt="imagen inicio" />
+          <a href="./pages/conoceme.html">
+            <img
+              class="img-carrusel"
+              src="img/conoceme.jpg"
+              alt="imagen novios fotografeados por un fotografo"
+            />
+          </a>
+          <h3>Conoceme</h3>
         </section>
       </div>
+      <!-- Fin -->
+
+      <section class="imagenFondo">
+        <h2 class="fuente">"Graficar imagenes de momentos inolvidables"</h2>
+      </section>
+
+      <!-- Bienvenida -->
+      <section class="bienvenida">
+        <img class="perfil" src="./img/perfil.jpg" alt="fotografo de pie" />
+        <div class="p-bienvenida">
+          <h1>Bienvenidos a FoteaMiBoda</h1>
+          <p class="p">
+            Hola, Soy Pedro te doy la bienvenida a nuestro sitio, estoy
+            encantado de recibirte e invitarte a que revises nuestro trabajo,
+            tenemos cinco años de experiencia en bodas, te aseguro que te
+            gustara la manera en que trabajamos. Destaca nuestra responsabilidad
+            y puntualidad.
+          </p>
+          <a class="btn-conoceme" href="pages/conoceme.html">Conoceme</a>
+        </div>
+      </section>
+      <!-- Fin Bienvenida -->
     </main>
     <!-- Comienza pie de Página -->
     <footer>
-      <h6>rss</h6>
-      <h6>Información</h6>
+      <div class="img-piePagina">
+        <img
+          class="img-footer"
+          src="img/footer1.jpg"
+          alt="Joven arregla corbata a su amigo para su matrimonio"
+        />
+        <img
+          class="img-footer"
+          src="img/footer2.jpg"
+          alt="novia se arregla aros para su boda"
+        />
+        <img
+          class="img-footer"
+          src="img/footer3.jpg"
+          alt="novia de pie en una sala"
+        />
+        <img
+          class="img-footer"
+          src="img/footer4.jpg"
+          alt="novios se ponen argollas"
+        />
+      </div>
+      <h4>Siguenos</h4>
+      <div class="division"></div>
+      <div class="icon">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+      </div>
+      <p class="p-footer">Todos los derechos reservados | @foteamiboda 2023</p>
     </footer>
     <!-- Final de pie de Página -->
     <!-- Libreria JS Bootstrap -->
