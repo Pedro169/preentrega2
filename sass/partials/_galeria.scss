@@ -1,0 +1,30 @@
+@import "./variables";
+@import "./inicio";
+
+body {
+  .imagenFondo-galeria {
+    margin: 0;
+    padding: 0;
+    background-image: url("../../img/horizontal19.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    color: #333;
+    width: auto;
+    height: 85vh;
+    display: flex;
+    justify-content: Center;
+    align-items: center;
+    .fuente2 {
+      color: white;
+      text-shadow: 2px 2px 5px rgba(12, 2, 2, 0.925);
+    }
+  }
+  .galeria {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
+  }
+}

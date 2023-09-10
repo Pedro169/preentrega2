@@ -16,6 +16,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,500&display=swap");
 body main nav {
   background-color: red;
 }
@@ -67,7 +73,7 @@ body main .interiorInicio h3 {
 body main .imagenFondo {
   margin: 0;
   padding: 0;
-  background-image: url("../../img/imagenFondo1.jpg");
+  background-image: url("../../img/horizontal28.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -110,6 +116,10 @@ body main .bienvenida .p-bienvenida .btn-conoceme {
   font-size: 1.5rem;
   padding: 0.2rem 1rem;
   border: solid 1px black;
+}
+body main .bienvenida .p-bienvenida .btn-conoceme:hover {
+  background-color: black;
+  color: white;
 }
 body footer {
   display: flex;
@@ -199,7 +209,7 @@ body main .interiorInicio h3 {
 body main .imagenFondo {
   margin: 0;
   padding: 0;
-  background-image: url("../../img/imagenFondo1.jpg");
+  background-image: url("../../img/horizontal28.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -243,6 +253,10 @@ body main .bienvenida .p-bienvenida .btn-conoceme {
   padding: 0.2rem 1rem;
   border: solid 1px black;
 }
+body main .bienvenida .p-bienvenida .btn-conoceme:hover {
+  background-color: black;
+  color: white;
+}
 body footer {
   display: flex;
   flex-direction: column;
@@ -278,6 +292,49 @@ body footer .p-footer {
   font-size: 0.7rem;
   margin-top: 0.5rem;
   margin-bottom: 1rem;
+}
+
+body .card-title1 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+body .blog {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 3rem;
+}
+body .blog .card-style {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+body .blog .card-style .card-body {
+  padding: 1rem;
+}
+body .blog .card-style .img-cardStyle {
+  width: 20rem;
+  height: auto;
+}
+body .btn-blog {
+  margin-left: 18rem;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  font-family: "Dancing Script", cursive;
+  font-size: 1.5rem;
+  padding: 0.2rem 4rem;
+  border: solid 1px black;
+}
+body .btn-blog:hover {
+  background-color: black;
+  color: white;
 }
 
 body main nav {
@@ -331,7 +388,7 @@ body main .interiorInicio h3 {
 body main .imagenFondo {
   margin: 0;
   padding: 0;
-  background-image: url("../../img/imagenFondo1.jpg");
+  background-image: url("../../img/horizontal28.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -374,6 +431,10 @@ body main .bienvenida .p-bienvenida .btn-conoceme {
   font-size: 1.5rem;
   padding: 0.2rem 1rem;
   border: solid 1px black;
+}
+body main .bienvenida .p-bienvenida .btn-conoceme:hover {
+  background-color: black;
+  color: white;
 }
 body footer {
   display: flex;
@@ -428,8 +489,8 @@ body .imagenFondo-conoceme {
   align-items: center;
 }
 body .imagenFondo-conoceme .fuente2 {
-  color: black;
-  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.925);
+  color: white;
+  text-shadow: 2px 2px 5px rgba(10, 0, 0, 0.925);
 }
 body .conoceme {
   display: flex;
@@ -454,6 +515,168 @@ body .p-conoceme span {
   font-weight: bold;
   font-size: 2.5rem;
   font-family: "Dancing Script", cursive;
+}
+
+body main nav {
+  background-color: red;
+}
+body main h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-family: "Dancing Script", cursive;
+}
+body main h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  margin-top: 1rem;
+  font-weight: bold;
+  color: white;
+  font-family: "Dancing Script", cursive;
+  font-size: 3rem;
+}
+body main .carrusel {
+  display: flex;
+  justify-content: center;
+}
+body main .carrusel .img-index {
+  width: 100%;
+  height: auto;
+}
+body main .interiorInicio {
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+}
+body main .interiorInicio .img-carrusel {
+  padding: 1rem;
+  width: 15rem;
+  height: auto;
+  margin-left: 2rem;
+  border-radius: 1rem;
+  transition: transform 0.3s ease;
+}
+body main .interiorInicio .img-carrusel:hover {
+  transform: scale(1.2);
+}
+body main .interiorInicio h3 {
+  font-size: 1rem;
+  font-family: "Playfair Display", serif;
+  color: black;
+  text-decoration: none;
+}
+body main .imagenFondo {
+  margin: 0;
+  padding: 0;
+  background-image: url("../../img/horizontal28.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+  color: #333;
+  width: auto;
+  height: 55vh;
+  display: flex;
+  justify-content: Center;
+  align-items: center;
+}
+body main .bienvenida {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+body main .bienvenida .perfil {
+  padding: 1rem;
+  width: 15rem;
+  height: auto;
+  margin-right: 2rem;
+  border-radius: 50%;
+}
+body main .bienvenida .p-bienvenida {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25rem;
+}
+body main .bienvenida .p-bienvenida .p {
+  text-align: justify;
+  font-family: "Playfair Display", serif;
+}
+body main .bienvenida .p-bienvenida .btn-conoceme {
+  margin-left: 18rem;
+  color: black;
+  text-decoration: none;
+  font-family: "Dancing Script", cursive;
+  font-size: 1.5rem;
+  padding: 0.2rem 1rem;
+  border: solid 1px black;
+}
+body main .bienvenida .p-bienvenida .btn-conoceme:hover {
+  background-color: black;
+  color: white;
+}
+body footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40vh;
+  background-color: black;
+  color: white;
+}
+body footer .img-piePagina .img-footer {
+  width: 7rem;
+  height: auto;
+  margin-top: 1.5rem;
+}
+body footer h4 {
+  margin-top: 2rem;
+  font-size: 1.7rem;
+  font-family: "Dancing Script", cursive;
+}
+body footer .division {
+  color: white;
+  width: 6rem;
+  height: 1px;
+  border-bottom: 2px solid white;
+}
+body footer .icon {
+  color: white;
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+}
+body footer .p-footer {
+  font-size: 0.7rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+body .imagenFondo-galeria {
+  margin: 0;
+  padding: 0;
+  background-image: url("../../img/horizontal19.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+  color: #333;
+  width: auto;
+  height: 85vh;
+  display: flex;
+  justify-content: Center;
+  align-items: center;
+}
+body .imagenFondo-galeria .fuente2 {
+  color: white;
+  text-shadow: 2px 2px 5px rgba(12, 2, 2, 0.925);
+}
+body .galeria {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 2rem;
 }
 
 /*# sourceMappingURL=estilos.css.map */

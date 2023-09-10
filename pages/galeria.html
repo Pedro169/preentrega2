@@ -6,94 +6,310 @@
     <title>Preentrega 1</title>
     <!-- Estilos -->
     <link rel="stylesheet" href="../css/style.css" />
-       <!-- Estilos con Sass -->
-       <link rel="stylesheet" href="css/estilos.css" />
-      <!-- Bootstrap -->
-      <link
+    <!-- Estilos con Sass -->
+    <link rel="stylesheet" href="../css/estilos.css" />
+
+    <!-- Bootstrap -->
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
     />
+    <!-- fontAwesome -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
   </head>
   <body>
-    <header>
-      <a href="index.html"
-        ><img class="logo" src="../img/logo.png" alt="logo"
-      /></a>
-      <!-- Barra de navegación -->
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">FotoBlog</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="active" aria-current="page" href="../index.html"
-                  >Inicio</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="" href="conoceme.html">Conoceme</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Revisar
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="item1" href="galeria.html">Galería</a></li>
-                  <li><a class="item1" href="blog.html">Blog</a></li>
-                </ul>
-              </li>
-            </ul>
-            <form class="d-flex" role="buscar">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Introduce una palabra"
-                aria-label="Buscar"
-              />
-              <button class="btn-nav" type="submit">
-                Buscar
-              </button>
-            </form>
+    <header>      
+        <!-- Barra de navegación -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarScroll"
+              aria-controls="navbarScroll"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+              <ul
+                class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+                style="--bs-scroll-height: 100px"
+              >
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="../index.html"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="conoceme.html">Conoceme</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="galeria.html">Galería</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+              </ul>
+            </div>
+            <a class="navbar-brand" href="../index.html">FoteaMiBoda</a>
           </div>
-        </div>
-      </nav>
-      <!-- Fin Barra de Navegación -->
+        </nav>
+        <!-- Fin Barra de Navegación -->
     </header>
     <main>
+      <section class="imagenFondo-galeria">
+        <h2 class="fuente2">"Algunas imagenes de nuestros matrimonios"</h2>
+      </section>
       <section class="galeria">
-        <h3>Galería</h3>
-        <p class="p-galeria">Revisa nuestras imagenes a continuación.</p>
-        <img class="img-galeria grid-item" src="../img/principio.jpeg" alt="imagen1" />
-        <img class="img-galeria grid-item" src="../img/principio.jpeg" alt="imagen2" />
-        <img class="img-galeria grid-item" src="../img/principio.jpeg" alt="imagen3" />
-        <img class="img-galeria grid-item" src="../img/principio.jpeg" alt="imagen4" />
-        <img class="img-galeria grid-item" src="../img/principio.jpeg" alt="imagen5" />
-        <img class="img-galeria grid-item" src="../img/principio.jpeg" alt="imagen6" />
+        <!-- Inicio Galleria -->
+        <div class="row">
+          <!-- Columna 1 -->
+          <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                              <img
+                                src="../img/horizontal1.jpg"
+                                class="w-100 shadow-1-strong rounded mb-4"
+                                alt="Boat on Calm Water"
+                              />
+
+                                  <img
+                                    src="../img/vertical2.jpg"
+                                    class="w-100 shadow-1-strong rounded mb-4"
+                                    alt="Wintry Mountain Landscape"
+                                  />
+                                  <img
+                                    src="../img/horizontal2.jpg"
+                                    class="w-100 shadow-1-strong rounded mb-4"
+                                    alt="Wintry Mountain Landscape"
+                                  />
+                                  <img
+                                    src="../img/horizontal15.jpg"
+                                    class="w-100 shadow-1-strong rounded mb-4"
+                                    alt="Waves at Sea"
+                                  />
+                                            <img
+                                            src="../img/vertical8.jpg"
+                                            class="w-100 shadow-1-strong rounded mb-4"
+                                            alt="Waves at Sea"
+                                            />
+                                            <img
+                                            src="../img/horizontal17.jpg"
+                                            class="w-100 shadow-1-strong rounded mb-4"
+                                            alt="Waves at Sea"
+                                        />
+                                            <img
+                                            src="../img/horizontal18.jpg"
+                                            class="w-100 shadow-1-strong rounded mb-4"
+                                            alt="Waves at Sea"
+                                            />
+                                            <img
+                                            src="../img/vertical9.jpg"
+                                            class="w-100 shadow-1-strong rounded mb-4"
+                                            alt="Waves at Sea"
+                                        />
+                                        <img
+                                        src="../img/horizontal7.jpg"
+                                        class="w-100 shadow-1-strong rounded mb-4"
+                                        alt="Waves at Sea"
+                                        />
+                                        <img
+                                        src="../img/vertical1.jpg"
+                                        class="w-100 shadow-1-strong rounded mb-4"
+                                        alt="Waves at Sea"
+                                    />
+                                    <img
+                                    src="../img/footer2.jpg"
+                                    class="w-100 shadow-1-strong rounded mb-4"
+                                    alt="Waves at Sea"
+                                    />
+                                        <img
+                                        src="../img/vertical12.jpg"
+                                        class="w-100 shadow-1-strong rounded mb-4"
+                                        alt="Waves at Sea"
+                                        />
+                                </div>
+                                <!-- Columna 2 -->
+
+                                <div class="col-lg-4 mb-4 mb-lg-0">
+                                    <img
+                                    src="../img/vertical.jpg"
+                                    class="w-100 shadow-1-strong rounded mb-4"
+                                    alt="Mountains in the Clouds"
+                                    />
+
+                                    <img
+                                    src="../img/horizontal3.jpg"
+                                    class="w-100 shadow-1-strong rounded mb-4"
+                                    alt="Boat on Calm Water"
+                                    />
+                                    <img
+                                    src="../img/horizontal4.jpg"
+                                    class="w-100 shadow-1-strong rounded mb-4"
+                                    alt="Boat on Calm Water"
+                                    />
+                                    <img
+                                    src="../img/vertical13.jpg"
+                                    class="w-100 shadow-1-strong rounded mb-4"
+                                    alt="Waves at Sea"
+                                    />
+                                    <img
+                                    src="../img/horizontal21.jpg"
+                                    class="w-100 shadow-1-strong rounded mb-4"
+                                    alt="Waves at Sea"
+                                />
+                                <img
+                                src="../img/vertical7.jpg"
+                                class="w-100 shadow-1-strong rounded mb-4"
+                                alt="Waves at Sea"
+                                />
+                                <img
+                                src="../img/horizontal23.jpg"
+                                class="w-100 shadow-1-strong rounded mb-4"
+                                alt="Waves at Sea"
+                            />
+                            <img
+                            src="../img/horizontal24.jpg"
+                            class="w-100 shadow-1-strong rounded mb-4"
+                            alt="Waves at Sea"
+                            />
+                            <img
+                            src="../img/vertical13.jpg"
+                            class="w-100 shadow-1-strong rounded mb-4"
+                            alt="Waves at Sea"
+                        />
+                        <img
+                        src="../img/horizontal10.jpg"
+                        class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Waves at Sea"
+                        />
+                        <img
+                        src="../img/vertical4.jpg"
+                        class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Waves at Sea"
+                        />
+                        <img
+                        src="../img/horizontal27.jpg"
+                        class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Waves at Sea"
+                        />
+                                </div>
+          <!-- Columna 3 -->
+
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                        <img
+                        src="../img/horizontal5.jpg"
+                        class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Novia tomandose el velo"
+                        />
+
+                        <img
+                        src="../img/vertical11.jpg"
+                        class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Yosemite National Park"
+                        />
+                        <img
+                        src="../img/horizontal14.jpg"
+                        class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Waves at Sea"
+                        />
+                        <img
+                        src="../img/horizontal16.jpg"
+                        class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Waves at Sea"
+                    />
+                    <img
+                    src="../img/vertical6.jpg"
+                    class="w-100 shadow-1-strong rounded mb-4"
+                    alt="Waves at Sea"
+                    />
+                    <img
+                    src="../img/horizontal19.jpg"
+                    class="w-100 shadow-1-strong rounded mb-4"
+                    alt="Waves at Sea"
+                />
+                        <img
+                        src="../img/horizontal22.jpg"
+                        class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Waves at Sea"
+                        />
+                        <img
+                        src="../img/vertical10.jpg"
+                        class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Waves at Sea"
+                    />
+                    <img
+                    src="../img/horizontal6.jpg"
+                    class="w-100 shadow-1-strong rounded mb-4"
+                    alt="Waves at Sea"
+                    />
+                    <img
+                    src="../img/vertical3.jpg"
+                    class="w-100 shadow-1-strong rounded mb-4"
+                    alt="Waves at Sea"
+                    />
+                    <img
+                    src="../img/vertical5.jpg"
+                    class="w-100 shadow-1-strong rounded mb-4"
+                    alt="Waves at Sea"
+                    />
+                    <img
+                    src="../img/horizontal26.jpg"
+                    class="w-100 shadow-1-strong rounded mb-4"
+                    alt="Waves at Sea"
+                    />
+                </div>
+              </div>                            
       </section>
     </main>
+    <!-- Comienza pie de Página -->
     <footer>
-      <h6>rss</h6>
-      <h6>Información</h6>
+      <div class="img-piePagina">
+        <img
+          class="img-footer"
+          src="../img/footer1.jpg"
+          alt="Joven arregla corbata a su amigo para su matrimonio"
+        />
+        <img
+          class="img-footer"
+          src="../img/footer2.jpg"
+          alt="novia se arregla aros para su boda"
+        />
+        <img
+          class="img-footer"
+          src="../img/footer3.jpg"
+          alt="novia de pie en una sala"
+        />
+        <img
+          class="img-footer"
+          src="../img/footer4.jpg"
+          alt="novios se ponen argollas"
+        />
+      </div>
+      <h4>Siguenos</h4>
+      <div class="division"></div>
+      <div class="icon">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+      </div>
+      <p class="p-footer">Todos los derechos reservados | @foteamiboda 2023</p>
     </footer>
+    <!-- Final de pie de Página -->
     <!-- Libreria JS Bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"

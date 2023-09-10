@@ -54,7 +54,7 @@ body {
     .imagenFondo {
       margin: 0;
       padding: 0;
-      background-image: url("../../img/imagenFondo1.jpg");
+      background-image: url("../../img/horizontal28.jpg");
       background-size: cover;
       background-repeat: no-repeat;
       background-attachment: fixed;
@@ -95,6 +95,10 @@ body {
           font-size: 1.5rem;
           padding: 0.2rem 1rem;
           border: solid 1px black;
+          &:hover {
+            background-color: black;
+            color: white;
+          }
         }
       }
     }
