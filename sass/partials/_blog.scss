@@ -2,46 +2,90 @@
 @import "./inicio";
 
 body {
-  .card-title1 {
-    font-size: 1.5rem;
-    text-align: center;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
-  .blog {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 3rem;
-    .card-style {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      border-radius: 10rem;
-      padding: 1rem;
+  main {
+    .card-title1 {
+      font-size: 1.5rem;
+      text-align: center;
+      margin-top: 1rem;
       margin-bottom: 1rem;
-      .card-body {
-        padding: 1rem;
-      }
-      .img-cardStyle {
-        width: 20rem;
+    }
+    .img-fondoBody {
+      @extend .imagenFondo;
+      background-image: url(../../img/footer2.jpg);
+      height: 100vh;
+    }
+
+    .blog {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 3rem;
+      .card-blog {
+        width: 30rem;
         height: auto;
+        .card-style {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+          border-radius: 10rem;
+          padding: 1rem;
+          margin-bottom: 1rem;
+          width: auto;
+          height: 30rem;
+          .img-cardStyle {
+            width: 20rem;
+            height: auto;
+          }
+          .card-body {
+            .card-title1 {
+              font-family: $Dancing;
+            }
+            .card-text {
+              font-family: $Playfair;
+            }
+            .btn-blog {
+              margin-left: 15rem;
+              background-color: white;
+              color: black;
+              text-decoration: none;
+              font-family: $Dancing;
+              padding: 0.2rem 1rem;
+              font-size: 1.5rem;
+              border: solid 1px black;
+              border-radius: 15px;
+              &:hover {
+                background-color: black;
+                color: white;
+              }
+            }
+          }
+        }
+
+        .img-cardStyle {
+          width: 20rem;
+          height: auto;
+        }
+        .card-text {
+          font-size: $Playfair;
+        }
       }
     }
   }
-  .btn-blog {
-    margin-left: 18rem;
-    background-color: white;
-    color: black;
-    text-decoration: none;
-    font-family: $Dancing;
-    font-size: 1.5rem;
-    padding: 0.2rem 4rem;
-    border: solid 1px black;
-    &:hover {
-      background-color: black;
-      color: white;
+  @media (min-width: $mobile) {
+    .card-blog {
+      height: 2rem;
+      .card-text {
+        height: rem;
+      }
+    }
+    .card-style {
+      height: 2rem;
+    }
+  }
+  @media (min-width: 576px) {
+    .card-style {
+      height: 0.5rem;
     }
   }
 }

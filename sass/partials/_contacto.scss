@@ -1,0 +1,17 @@
+@import "./variables";
+@import "./inicio";
+body {
+  .fondo-contacto {
+    @extend .imagenFondo;
+    background-image: url("../../img/horizontal5.jpg");
+  }
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    form {
+      display: flex;
+      flex-direction: column;
+      padding: 3rem;
+    }
+  }
+}
