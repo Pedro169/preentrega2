@@ -1,17 +1,81 @@
 @import "./variables";
 @import "./inicio";
+
 body {
-  .fondo-contacto {
-    @extend .imagenFondo;
-    background-image: url("../../img/horizontal5.jpg");
-  }
-  .formulario {
-    display: flex;
-    flex-direction: column;
-    form {
+  main {
+    .fondo-contacto {
+      margin: 0;
+      padding: 0;
+      background-image: url("../../img/horizontal6.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      font-family: Arial, sans-serif;
+      color: #333;
+      width: auto;
+      height: 95vh;
       display: flex;
-      flex-direction: column;
-      padding: 3rem;
+      justify-content: Center;
+      align-items: center;
+      .p-contacto {
+        color: white;
+        font-family: $Playfair;
+        font-size: 1.5rem;
+        text-align: center;
+      }
+      .formulario {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        form {
+          display: flex;
+          flex-direction: column;
+          padding: 3rem;
+          width: 50rem;
+
+          .input {
+            padding: 1rem 2rem;
+            margin-top: 1rem;
+            border: 1px solid rgb(252, 201, 62);
+            border-radius: 1rem;
+            &::placeholder {
+              color: rgb(252, 201, 62);
+              opacity: 0.4;
+            }
+            &:focus {
+              border: solid 2px gray;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $tablet) {
+  body {
+    main {
+      .fondo-contacto {
+        display: flex;
+        flex-direction: column;
+        background-position: center;
+        height: 100%;
+        .p-contacto {
+          font-size: 1.5rem;
+        }
+        .formulario {
+          width: auto;
+          height: auto;
+          padding: 1rem;
+          form {
+            width: 100%;
+            .input {
+              padding: 1rem 0.5rem;
+            }
+          }
+        }
+      }
     }
   }
 }

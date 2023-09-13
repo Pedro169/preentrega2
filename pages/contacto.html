@@ -15,6 +15,14 @@
       integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
     />
+    <!-- fontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header>
@@ -66,22 +74,30 @@
     </header>
     <main>
       <section class="fondo-contacto">
-        <h2></h2>
+        <section>
+          <h2>"Escribenos"</h2>
+          <p class="p-contacto">
+            Estaremos felices de responder a tus preguntas
+          </p>
+        </section>
+        <!-- Inicio Formulario -->
+        <section class="formulario">
+          <form action="">
+            <input class="input" type="text" placeholder="nombre y apellido" />
+            <input class="input" type="tel" placeholder="telefono" />
+            <input class="input" type="email" placeholder="email" />
+            <textarea
+              class="input"
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="escribe lo que necesitas"
+            ></textarea>
+          </form>
+        </section>
       </section>
-      <section class="formulario">
-        <form action="">
-          <input type="text" placeholder="nombre y apellido" />
-          <input type="tel" placeholder="telefono" />
-          <input type="email" placeholder="email" />
-          <textarea
-            name=""
-            id=""
-            cols="30"
-            rows="10"
-            placeholder="escribe lo que necesitas"
-          ></textarea>
-        </form>
-      </section>
+      <!-- Fin formulario -->
     </main>
     <!-- Comienza pie de Página -->
     <footer>
@@ -116,5 +132,16 @@
       <p class="p-footer">Todos los derechos reservados | @foteamiboda 2023</p>
     </footer>
     <!-- Final de pie de Página -->
+    <!-- Libreria JS Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

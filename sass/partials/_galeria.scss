@@ -28,3 +28,11 @@ body {
     padding: 2rem;
   }
 }
+
+@media (max-width: $tablet) {
+  body {
+    .imagenFondo-galeria {
+      background-position: center;
+    }
+  }
+}

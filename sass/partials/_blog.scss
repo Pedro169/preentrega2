@@ -72,20 +72,35 @@ body {
       }
     }
   }
-  @media (min-width: $mobile) {
-    .card-blog {
-      height: 2rem;
-      .card-text {
-        height: rem;
+}
+
+@media (max-width: $tablet) {
+  body {
+    main {
+      .blog {
+        .card-blog {
+          width: 100%;
+          .card-style {
+            width: 100%;
+            padding: 1rem;
+            .img-cardStyle {
+              width: 15rem;
+            }
+            .card-body {
+              width: 100%;
+              font-size: 1rem;
+              .card-text {
+                padding: 1rem;
+                text-align: justify;
+                font-size: 0.8rem;
+              }
+              .btn-blog {
+                margin-left: 0rem;
+              }
+            }
+          }
+        }
       }
-    }
-    .card-style {
-      height: 2rem;
-    }
-  }
-  @media (min-width: 576px) {
-    .card-style {
-      height: 0.5rem;
     }
   }
 }
