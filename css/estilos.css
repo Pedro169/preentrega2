@@ -988,7 +988,7 @@ body .imagenFondo-galeria {
   font-family: Arial, sans-serif;
   color: #333;
   width: auto;
-  height: 85vh;
+  height: 100vh;
   display: flex;
   justify-content: Center;
   align-items: center;
