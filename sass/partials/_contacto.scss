@@ -75,11 +75,19 @@ body {
 @media (max-width: $tablet) {
   body {
     main {
+      section {
+        .titulo-Contacto {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
       .fondo-contacto {
         display: flex;
         flex-direction: column;
         background-position: center;
         height: 100%;
+
         .p-contacto {
           font-size: 1.5rem;
         }

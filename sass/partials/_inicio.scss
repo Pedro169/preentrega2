@@ -1,5 +1,12 @@
 @import "./variables";
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
 body {
   main {
     nav {
@@ -7,8 +14,10 @@ body {
     }
     h1 {
       font-size: 2rem;
-      margin-bottom: 2rem;
       font-family: $Dancing;
+      text-align: center;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
     }
     h2 {
       text-align: center;
@@ -17,8 +26,15 @@ body {
       margin-top: 1rem;
       font-weight: bold;
       color: white;
+      text-decoration-line: black;
       font-family: $Dancing;
       font-size: 3rem;
+    }
+    h3 {
+      font-size: 2rem;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+      text-align: center;
     }
     .navbar-brand1 {
       font-family: $Dancing;
@@ -68,6 +84,10 @@ body {
       display: flex;
       justify-content: Center;
       align-items: center;
+      .fuente {
+        color: white;
+        text-shadow: 2px 2px 5px rgba(12, 2, 2, 0.925);
+      }
     }
     .bienvenida {
       display: flex;
@@ -152,8 +172,10 @@ body {
     main {
       .interiorInicio {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 0.5rem;
         width: 100%;
       }
       h2 {
@@ -172,6 +194,7 @@ body {
           justify-content: center;
           align-items: center;
           flex-direction: column;
+          width: 100%;
           h1 {
             font-size: 1.5rem;
           }
