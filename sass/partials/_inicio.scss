@@ -10,7 +10,10 @@
 body {
   main {
     nav {
-      background-color: red;
+      background-color: white;
+      .navbar-font {
+        font-family: $Dancing;
+      }
     }
     h1 {
       font-size: 2rem;
@@ -36,9 +39,7 @@ body {
       margin-bottom: 2rem;
       text-align: center;
     }
-    .navbar-brand1 {
-      font-family: $Dancing;
-    }
+
     .carrusel {
       display: flex;
       justify-content: center;

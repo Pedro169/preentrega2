@@ -42,7 +42,10 @@
 }
 
 body main nav {
-  background-color: red;
+  background-color: white;
+}
+body main nav .navbar-font {
+  font-family: "Dancing Script", cursive;
 }
 body main h1 {
   font-size: 2rem;
@@ -67,9 +70,6 @@ body main h3 {
   margin-top: 1rem;
   margin-bottom: 2rem;
   text-align: center;
-}
-body main .navbar-brand1 {
-  font-family: "Dancing Script", cursive;
 }
 body main .carrusel {
   display: flex;
@@ -257,7 +257,10 @@ body footer .p-footer {
 }
 
 body main nav {
-  background-color: red;
+  background-color: white;
+}
+body main nav .navbar-font {
+  font-family: "Dancing Script", cursive;
 }
 body main h1 {
   font-size: 2rem;
@@ -282,9 +285,6 @@ body main h3 {
   margin-top: 1rem;
   margin-bottom: 2rem;
   text-align: center;
-}
-body main .navbar-brand1 {
-  font-family: "Dancing Script", cursive;
 }
 body main .carrusel {
   display: flex;
@@ -472,7 +472,10 @@ body footer .p-footer {
 }
 
 body main nav {
-  background-color: red;
+  background-color: white;
+}
+body main nav .navbar-font {
+  font-family: "Dancing Script", cursive;
 }
 body main h1 {
   font-size: 2rem;
@@ -497,9 +500,6 @@ body main h3 {
   margin-top: 1rem;
   margin-bottom: 2rem;
   text-align: center;
-}
-body main .navbar-brand1 {
-  font-family: "Dancing Script", cursive;
 }
 body main .carrusel {
   display: flex;
@@ -817,7 +817,10 @@ body main .blog .card-blog .card-text {
 }
 
 body main nav {
-  background-color: red;
+  background-color: white;
+}
+body main nav .navbar-font {
+  font-family: "Dancing Script", cursive;
 }
 body main h1 {
   font-size: 2rem;
@@ -842,9 +845,6 @@ body main h3 {
   margin-top: 1rem;
   margin-bottom: 2rem;
   text-align: center;
-}
-body main .navbar-brand1 {
-  font-family: "Dancing Script", cursive;
 }
 body main .carrusel {
   display: flex;
@@ -1126,7 +1126,10 @@ body .container-conoceme .p-conoceme .row-conoceme span {
 }
 
 body main nav {
-  background-color: red;
+  background-color: white;
+}
+body main nav .navbar-font {
+  font-family: "Dancing Script", cursive;
 }
 body main h1 {
   font-size: 2rem;
@@ -1151,9 +1154,6 @@ body main h3 {
   margin-top: 1rem;
   margin-bottom: 2rem;
   text-align: center;
-}
-body main .navbar-brand1 {
-  font-family: "Dancing Script", cursive;
 }
 body main .carrusel {
   display: flex;
@@ -1372,7 +1372,10 @@ body .galeria {
 }
 
 body main nav {
-  background-color: red;
+  background-color: white;
+}
+body main nav .navbar-font {
+  font-family: "Dancing Script", cursive;
 }
 body main h1 {
   font-size: 2rem;
@@ -1397,9 +1400,6 @@ body main h3 {
   margin-top: 1rem;
   margin-bottom: 2rem;
   text-align: center;
-}
-body main .navbar-brand1 {
-  font-family: "Dancing Script", cursive;
 }
 body main .carrusel {
   display: flex;
